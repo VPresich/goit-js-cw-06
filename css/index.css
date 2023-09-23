@@ -1,0 +1,16 @@
+@import "./utils/variables.css";
+@import "./utils/visually-hidden.css";
+
+@import "./base/common.css";
+@import "./base/container.css";
+@import "./layout/header.css";
+@import "./layout/problem-6-1.css";
+@import "./layout/problem-6-2.css";
+@import "./layout/problem-6-3.css";
+@import "./layout/problem-6-4.css";
+@import "./layout/problem-6-5.css";
+@import "./layout/problem-6-6.css";
+@import "./layout/problem-6-7.css";
+@import "./layout/problem-6-8.css";
+@import "./layout/problem-6-9.css";
+@import "./layout/problem-6-10.css";

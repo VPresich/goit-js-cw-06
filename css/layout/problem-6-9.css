@@ -1,0 +1,47 @@
+.widget {
+  width: 300px;
+  height: 150px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 8px;
+  background-color: rgba(46, 47, 66, 0.01);
+  border-radius: 8px;
+  border: 1px solid rgba(46, 47, 66, 0.08);
+  margin: 0 auto;
+  font-size: 20px;
+  color: aquamarine;
+}
+
+.color {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.change-color {
+  cursor: pointer;
+  background-color: var(--cloud);
+  color: var(--iris);
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 500ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.change-color:hover,
+.change-color:focus {
+  background-color: var(--green);
+  color: var(--white);
+  border: none;
+}
