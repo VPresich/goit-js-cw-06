@@ -82,22 +82,36 @@
         <div class="container">
           <h2 class="visually-hidden">6-8</h2>
 
-          <form class="login-form">
-            <label>
-              Email
-              <input type="email" name="email" />
-            </label>
-            <label>
-              Password
-              <input type="password" name="password" />
-            </label>
-            <button type="submit">Login</button>
-          </form>
+          <table class="publication-table js-publication-table">
+            <thead class="head-table">
+              <tr class="thead-row-table">
+                <th class="telem-number">№</th>
+                <th class="telem-title">Title</th>
+                <th class="telem-type">Type</th>
+                <th class="telem-where">Where</th>
+                <th class="telem-volume">Volume</th>
+                <th class="telem-authors">Co-authors</th>
+              </tr>
+            </thead>
+            <!-- <tbody>
+              <tr class="tbody-row-table">
+                <td class="telem-number"></td>
+                <td class="telem-title"></td>
+                <td class="telem-type"></td>
+                <td class="telem-where"></td>
+                <td class="telem-volume"></td>
+                <td class="telem-authors"></td>
+              </tr>
+            </tbody> -->
+          </table>
         </div>
       </section>
 
       <!-- Скрипт до завдання 6-8 -->
-      <script src="./scripts/script-hm6-8.js" type="module"></script>
+      <script
+        src="./scripts/script-08-publications-table.js"
+        type="module"
+      ></script>
     </main>
   </body>
 </html>
