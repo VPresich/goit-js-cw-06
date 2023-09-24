@@ -1,9 +1,17 @@
 "use strict";
-            
+
+// Получение ссылок на все кнопки внутри js-section-hero-buttons
 const heroButtonsRef = document.querySelectorAll('.js-section-hero-buttons button');
 console.log(heroButtonsRef);
+// Парсинг dataset
+heroButtonsRef.forEach(heroBtn => { 
+    console.log(heroBtn.dataset.action);
 
-// Получение свойств єлементов
+    // или через getAttribute
+    console.log(heroBtn.getAttribute('data-action'));
+});
+
+// Получение свойств элементов 
 const heroImgRef = document.querySelector('.js-section-hero-image');
 console.log(heroImgRef);
 console.log(heroImgRef.src);
@@ -29,14 +37,22 @@ console.log(changeButton);
 changeButton.addEventListener('click', onChangeBtnClik);
     
 function onRemoveBtnClick() {    
-    console.log("Это обработчик кнопки Remove");      
+    console.log("Это обработчик кнопки Remove");
+    heroTitlerRef.textContent = "";
+    // Для удаления атрибута - метод removeAttribute('');
+    // Для проверки наличия атрибута - метод hasAttribute('');
 }
 
 function onAddBtnClick() {   
-    console.log("Это обработчик кнопки Add");    
+    console.log("Это обработчик кнопки Add");
+    heroTitlerRef.textContent = "Про нас";    
 }
 
 function onChangeBtnClik() {  
     console.log("Это обработчик кнопки Change"); 
     heroTitlerRef.textContent = "Про нас";
+    heroImgRef.alt = "Office";
+
+    // Получение атрибутов через getAttribute()
+    console.log(heroImgRef.getAttribute('src'));
 }
