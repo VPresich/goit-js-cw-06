@@ -1,3 +1,37 @@
+.color-cards-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.color-card{
+  padding: 5px;
+  border-radius: 4px;
+  background-color: var(--white);
+  box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2),
+  0 1px 1px 0px rgba(0, 0, 0, 0.14),
+  0 2px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+.color-card.is-active{
+  transform: perspective(400px) rotatex(10deg);
+}
+
+.color-swatch{
+  height: 120px;
+  cursor: pointer;
+}
+
+.color-meta {
+  padding: 10px;
+  font-weight: 700;
+}
+
+.color-meta p{
+  margin-top: 0;
+  margin-bottom: 0;
+  letter-spacing: 0.1em;  
+}
+
 .widget {
   width: 300px;
   height: 150px;
